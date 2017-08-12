@@ -12,24 +12,26 @@ var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var book_component_1 = require("./book.component");
 var product_list_component_1 = require("./products/product-list.component");
+var order_list_component_1 = require("./orderlist/order-list.component");
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule
+            ],
+            declarations: [
+                app_component_1.AppComponent,
+                book_component_1.BookComponent,
+                product_list_component_1.ProductListComponent,
+                order_list_component_1.OrderListComponent
+            ],
+            bootstrap: [app_component_1.AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule
-        ],
-        declarations: [
-            app_component_1.AppComponent,
-            book_component_1.BookComponent,
-            product_list_component_1.ProductListComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map
